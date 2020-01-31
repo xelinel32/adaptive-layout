@@ -1,0 +1,19 @@
+@import "vars";
+@import "font";
+@import "template";
+@import "stylereset";
+
+/* start */
+h1{
+    color: red;
+    transition: .3s linear;
+    cursor: default;
+    &:hover{
+        color: blue;
+    }
+    &.active{
+        border: 1px solid;
+    }
+}
+/* end */
+@import "media";
