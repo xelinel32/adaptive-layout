@@ -1,3 +1,4 @@
+// Template website
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -12,4 +13,13 @@
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
+}
+
+// mixins
+
+// pxtoem
+$browser-context: 16; // Default em(16)
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
 }
