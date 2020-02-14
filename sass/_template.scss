@@ -1,11 +1,11 @@
-// Template website
+// without spacing between header and footer
 .wrapper {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
+// container setting
 .container {
   max-width: 1170px;
   min-width: 320px;
@@ -14,10 +14,7 @@
   margin: 0 auto;
   position: relative;
 }
-
 // mixins
-
-// pxtoem
 $browser-context: 16; // Default em(16)
 
 @function em($pixels, $context: $browser-context) {
