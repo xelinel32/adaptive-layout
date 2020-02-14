@@ -1,15 +1,9 @@
 // This section included fonts
 
 @font-face {
-  font-family: "Proxima Nova";
-
-  src: url("nomail.com.ua/files/eot/410504d49238e955ba7dc23a7f963021.eot?#iefix")
-      format("embedded-opentype"),
-    url("nomail.com.ua/files/woff/410504d49238e955ba7dc23a7f963021.woff")
-      format("woff"),
-    url("nomail.com.ua/files/woff2/410504d49238e955ba7dc23a7f963021.woff2")
-      format("woff2");
-
+  font-family: 'Proxima Nova';
+  src: url('nomail.com.ua/files/eot/410504d49238e955ba7dc23a7f963021.eot?#iefix')
+    format('embedded-opentype');
   font-weight: 400;
   font-style: normal;
 }
