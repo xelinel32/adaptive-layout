@@ -14,5 +14,5 @@
 
 ### Download
 <div>
-    <p><b>GitHub:</b> https://github.com/xelinel32/adaptive-layout/releases</p>
+    <p><b>GitHub:</b> https://github.com/xelinel32/adaptive-scss-layout/releases</p>
 </div>
