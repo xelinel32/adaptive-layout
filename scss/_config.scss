@@ -1,0 +1,91 @@
+// IMPORT SECTION
+
+// USER VARIABLES SECTION
+$browser-context: 16; // Default em(16)
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$globalfont: "Roboto", sans-serif; // Roboto Font Family
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: local($fname), url($furl) format('woff2');
+  }
+}
+
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+@include font('Roboto', normal, 500, '../fonts/roboto-italic-webfont.woff2');
+@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+@include font('Roboto', normal, 900, '../fonts/roboto-bolditalic-webfont.woff2'
+);
+
+// GENERAL DOCUMENT STYLE SECTION
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+a,
+button,
+input,
+textarea {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: none;
+}
+body,
+html {
+  color: #000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $globalfont;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.footer {
+  margin-top: auto;
+}
+.container {
+  max-width: 1170px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
