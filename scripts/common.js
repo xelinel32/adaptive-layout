@@ -1,23 +1,18 @@
-$(document).ready(function () {
-
-    // Match Height
-    // $('').matchHeight();
-
-    // $('#date').mask('99/99/9999');
-    // $('#phone').mask('(999) 999-9999');
-    // $('#tin').mask('99-9999999');
-    // $('#ssn').mask('999-99-9999');
+$(document).ready(function() {
+  /* CUSTOM START */
     
-    // Animation
-    // new WOW().init();
 
-    // $(".smooth").on('click', function () {
-    //     var elementClick = $(this).attr("href");
-    //     var destination = $(elementClick).offset().top;
-    //     $("html:not(:animated),body:not(:animated)").animate({
-    //         scrollTop: destination
-    //     }, 800);
-    //     return false;
-    // });
-
-})
+  /* CUSTOM END */
+  // $('').matchHeight();
+  // $('#date').mask('99/99/9999');
+  // $('#phone').mask('(999) 999-9999');
+  // new WOW().init();
+  // $(".smooth").on('click', function () {
+  //     var elementClick = $(this).attr("href");
+  //     var destination = $(elementClick).offset().top;
+  //     $("html:not(:animated),body:not(:animated)").animate({
+  //         scrollTop: destination
+  //     }, 800);
+  //     return false;
+  // });
+});
