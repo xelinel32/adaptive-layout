@@ -1,4 +1,4 @@
-// IMPORT SECTION(font/plugin and more)
+// IMPORT SECTION(fonts/plugin and more)
 
 // USER VARIABLES SECTION
 $browser-context: 16; // Default em(16)
@@ -60,7 +60,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
   border-style: none;
 }
 svg {
@@ -178,9 +177,6 @@ summary {
 template {
   display: none;
 }
-[hidden] {
-  display: none !important;
-}
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -191,13 +187,14 @@ template {
   margin-top: auto;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1170px; // width - padding right and left
   min-width: 320px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 15px; // padding
   margin: 0 auto;
   position: relative;
 }
+// convert mixin
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
