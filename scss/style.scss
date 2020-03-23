@@ -1,8 +1,6 @@
-@import 'fonts'; // connect font
-@import 'vars'; // variables
+@import 'normalize'; // style reset
+@import 'config'; // style reset
 @import 'mixin'; // mixin
-@import 'reset'; // style reset
-@import 'interface'; // interface element
 // our code
 
 // our code end
