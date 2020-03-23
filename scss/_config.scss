@@ -19,23 +19,23 @@ $globalfont: 'Roboto', sans-serif; // font document
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: normal;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-body,
-html {
+body {
   color: #000;
   font-weight: normal;
   font-style: normal;
   font-family: $globalfont;
   font-size: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 // This section for interface elements document
 .container {
